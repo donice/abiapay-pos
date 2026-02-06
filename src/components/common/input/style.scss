@@ -9,7 +9,7 @@ $icon-color: #a4a4a4;
   flex-direction: column;
   gap: 0.15rem;
   position: relative;
-  
+
   label {
     display: flex;
     color: $form-label;
@@ -20,7 +20,7 @@ $icon-color: #a4a4a4;
     border: thin solid $form-input-border;
     padding: 0.5rem 1rem 0.5rem 3rem;
     border-radius: 10px;
-    min-width: 20rem;
+    // min-width: 20rem;
     width: 100%;
     outline: green;
 
@@ -196,5 +196,5 @@ $icon-color: #a4a4a4;
       font-weight: 200;
     }
   }
-  
+
 }

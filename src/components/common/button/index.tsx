@@ -140,7 +140,7 @@ export const SecondaryButton = ({ text, link, onClick }: prop) => {
       className="button secondary"
       onClick={() => {
         if (onClick) {
-          onClick(); 
+          onClick();
         } else if (link) {
           handleClick(link);
         }

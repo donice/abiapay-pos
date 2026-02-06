@@ -83,7 +83,8 @@ const AgentSigninForm: React.FC = () => {
         <FormButton
           loading={loading}
           text="Sign in"
-          disabled={!isFormValid || loading}
+          disabled={loading}
+          // disabled={!isFormValid || loading}
         />
       </div>{" "}
 

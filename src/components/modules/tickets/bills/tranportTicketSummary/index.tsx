@@ -45,7 +45,7 @@ const TransportTicketsSummaryComponent: React.FC = () => {
 
   // Function to handle printing the receipt
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
     documentTitle: `receipt_${data?.invoice_id}`,
   });
 

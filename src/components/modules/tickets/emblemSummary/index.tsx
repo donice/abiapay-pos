@@ -59,7 +59,7 @@ const EmblemSummary: React.FC = () => {
   const amount = data?.amount;
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef: componentRef,
     documentTitle: `receipt_$`,
     // documentTitle: `receipt_${res?.invoice_id}`,
   });

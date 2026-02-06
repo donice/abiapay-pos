@@ -17,7 +17,6 @@ const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Set a flag indicating the component has mounted
     setIsClient(true);
 
     if (!token && isProtectedRoute) {

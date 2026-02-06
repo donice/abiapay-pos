@@ -10,7 +10,10 @@ const SecuredPagesLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <AuthGuard>
+    // <AuthGuard>
+    <div>
+
+
       <TopNav />
       <div>
         <SideNav />
@@ -21,8 +24,8 @@ const SecuredPagesLayout: React.FC<{ children: React.ReactNode }> = ({
           </footer>
         </section>
       </div>
-      <BottomNav />
-    </AuthGuard>
+      <BottomNav /></div>
+    // </AuthGuard>
   );
 };
 

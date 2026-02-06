@@ -1,0 +1,25 @@
+@use "../../../../styles/index.scss" as *;
+
+.bills_comp {
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include custom-media-query("mobile", $sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+
+    &_buttons {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1rem;
+    }
+  }
+}

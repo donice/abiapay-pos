@@ -1,0 +1,47 @@
+@use "../../../styles/index.scss" as *;
+
+.loader-div {
+  margin-left: 0.5rem;
+}
+
+.redirecting {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_container {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: $text-primary;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 60vh;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+      font-size: 1rem;
+      color: $text-primary;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.bulk-id {
+  position: relative;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .bulk-id {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.bulk-id .card {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 32rem;
+  height: 19.5rem;
+  border: 2px solid rgb(240, 240, 240);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  background-image: url("../../../../../../public/prints/Abia-idbg.png") ;
+}
+
+
+.id-card {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  width: 500px;
+  height: 315px;
+  padding: 10px;
+  background: #fff;
+  background: url("../../../../../../public/prints/Abia-idbg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  .left-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .profile-img {
+      width: 150px;
+      border-radius: 1rem;
+      height: 160px;
+      overflow: hidden;
+
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      }
+    }
+
+    .enumeration-id {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 800;
+      letter-spacing: 0.075rem;
+    }
+    .enum-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      align-items: center;
+      margin-top: 0.5rem;
+    
+      p {
+        margin: 0;
+        line-height: 1;
+      }
+    }
+  }
+
+  .right-section {
+
+    .personal-details {
+       display: grid;
+    gap: 1.25rem;
+    margin-top: 5.5rem;
+    font-weight: 600;
+    }
+
+
+    .profile-img {
+      width: 100px;
+      height: auto;
+      border: 2px solid #fff;
+    }
+  }
+}
+.product-tag {
+  position: absolute;
+  right: 3rem;
+  top: 8.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.qr-code {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 3.5rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abssin_span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 1.45rem;
+  right: 0.75rem;
+
+  p {
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  
+
+  .abssin_number {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    letter-spacing: 0.075rem;
+  }
+}

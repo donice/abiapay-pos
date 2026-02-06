@@ -1,0 +1,25 @@
+@use "../../../../../styles/index.scss" as *;
+
+.market_add {
+  padding: 0 1rem;
+
+  @include custom-media-query("mobile", $sm) {
+    padding: 0;
+  }
+
+  .market-comp {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    margin-top: 1rem;
+
+    &_header {
+      margin-top: 0;
+
+      @include custom-media-query("mobile", $sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

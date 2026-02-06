@@ -1,0 +1,99 @@
+@use "../../../../../../styles/index.scss" as *;
+
+$primary: rgb(34 197 94);
+$primary-hover: rgb(2 44 34);
+$text-primary: rgb(113 113 122);
+$gray: rgba(86, 86, 94, 0.291);
+$border: 1px solid $gray;
+
+.top-nav {
+  width: 100%;
+  position: fixed;
+  // left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-primary;
+  background-color: white;
+  border-bottom: $border;
+  padding: 0 px-to-rem(36px);
+  z-index: 1;
+
+  @include custom-media-query("mobile", $lg) {
+    padding: 0 px-to-rem(12px);
+  }
+
+  @include custom-media-query("mobile", $sm) {
+    flex-direction: row-reverse;
+  }
+
+  &_logo {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+
+    @include custom-media-query("mobile", $sm) {
+      display: none;
+    }
+  }
+
+  &_user {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+
+    &_data {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+
+      p {
+        font-size: 0.75rem;
+      }
+      span {
+        margin-bottom: 0rem;
+        color: rgb(245 158 11);
+        background-color: rgba(251, 190, 36, 0.208);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 0.5rem;
+        border-radius: 0.35rem;
+        font-size: 12px;
+      }
+    }
+
+    // &_skeleton {
+    //   margin-top: 10px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   margin: 0;
+    //   border: 2px solid red;
+    // }
+
+  }
+  .icon {
+    font-size: 36px;
+    color: $text-primary;
+  }
+
+  .settings {
+    padding: 1rem 0;
+    display: none;
+    align-items: center;
+   
+
+    @include custom-media-query("mobile", $sm) {
+      display: flex;
+    }
+
+    .icon {
+       font-size: 28px;
+    }
+  }
+}

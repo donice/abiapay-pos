@@ -1,0 +1,64 @@
+@use "../../../../styles/index.scss" as *;
+  $bold-primary-text: #3f3f46;
+
+.stats-card {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #86efac;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  color: $text-primary;
+  font-size: 14px;
+
+  font-size: 14px;
+  -webkit-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  -moz-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  box-shadow: 11px 10px 14px 0px rgba(208, 208, 208, 0.28);
+
+  @include custom-media-query("mobile", $sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_summ {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    @include custom-media-query("mobile", $sm) {
+      flex-direction: column;
+    }
+
+    span:nth-child(1) {
+      color: $bold-primary-text;
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+  }
+  &_amount {
+    display: grid;
+
+    span:nth-child(1) {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
+  img {
+    width: 40px;
+  }
+}
+
+.green {
+  background-color: $primary;
+  color: white;
+
+  span {
+    color: white;
+  }
+
+  .icon {
+    color: white;
+  }
+}

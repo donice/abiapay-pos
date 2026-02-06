@@ -1,0 +1,51 @@
+$circle-size: 80px;
+$circle-border: 7px;
+$circle-color: #047857;
+$background-color: #f4f4f4;
+$text-color: #2c3e50;
+
+@mixin circle($size, $border, $color, $background) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: $background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.5s ease; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient($color 0% var(--progress), $background var(--progress) 100%);
+    clip-path: circle(50%);
+    transition: background 0.5s ease; 
+  }
+}
+
+.progressCircle {
+  @include circle($circle-size, $circle-border, $circle-color, $background-color);
+
+  &Inner {
+    width: calc(#{$circle-size} - 2 * #{$circle-border});
+    height: calc(#{$circle-size} - 2 * #{$circle-border});
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgb(237, 237, 237);
+  }
+
+  &Percentage {
+    color: $text-color;
+    font-size: 1em;
+    z-index: 1;
+  }
+}

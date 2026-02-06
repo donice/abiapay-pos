@@ -1,0 +1,24 @@
+@use "../../../../../styles/index.scss" as *;
+
+$form-label: rgb(89, 90, 91);
+$form-input-border: #d5d5d5;
+
+.find-ticket {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem; 
+
+  .btn_container {
+    margin-top: 2rem;
+    max-width: $sm;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .error {
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+  }
+}

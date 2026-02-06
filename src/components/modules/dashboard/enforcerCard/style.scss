@@ -1,0 +1,50 @@
+@use "../../../../styles/index.scss" as *;
+$bold-primary-text: #3f3f46;
+
+.enforcer-card {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border: 1px solid #86efac;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: #fafff5;
+  color: $text-primary;
+  font-size: 14px;
+
+  font-size: 14px;
+  -webkit-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  -moz-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  box-shadow: 11px 10px 14px 0px rgba(208, 208, 208, 0.28);
+
+  &_summ {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #d4ffe4;
+    border: 1px solid #b2ffce;
+    padding: 0.75rem;
+    border-radius: 100%;
+    color: green;
+  }
+
+  &_amount {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+
+    p {
+      color: gray;
+      font-weight: semibold;
+      font-size: 0.75rem;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: green;
+    }
+  }
+}

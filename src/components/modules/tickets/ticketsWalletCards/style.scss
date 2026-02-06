@@ -1,0 +1,16 @@
+@use "../../../../styles/index.scss" as *;
+
+.ticketspage_wallet {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+
+  @include custom-media-query("mobile", $sm) {
+    display: block;
+    margin-top: 0rem;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

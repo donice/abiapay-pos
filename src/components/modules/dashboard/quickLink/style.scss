@@ -1,0 +1,45 @@
+@use "../../../../styles/index.scss" as *;
+
+.quicklink {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  $bold-primary-text: #3f3f46;
+  border: 1px solid #86efac;
+  padding: 1.5rem 1rem;
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  color: $text-primary;
+  font-size: clamp(14px, 1.2vw + 7.16px, 18px);
+  -webkit-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  -moz-box-shadow: 11px 10px 34px 0px rgba(173, 173, 173, 0.9);
+  box-shadow: 11px 10px 14px 0px rgba(208, 208, 208, 0.28);
+
+  
+  &_name {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+
+    .icon {
+      font-size: 2rem;
+      color: $primary;
+    }
+  }
+
+  .coming-soon {
+    font-size: 12px;
+    font-weight: 500;
+    color: green;
+    border: 1px solid green;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    background-color: #dbffe8;
+  }
+}

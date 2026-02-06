@@ -1,0 +1,28 @@
+.identity-stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid green;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(20, 71, 3);
+  
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.05rem;
+      color: #cfcfcf;
+    }
+  
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+  
+      span {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: #cfcfcf;
+      }
+    }
+  }

@@ -1,0 +1,27 @@
+@use "../../../../../styles/index.scss" as *;
+
+.transport_add {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include custom-media-query("mobile", $sm) {
+    padding: 0;
+  }
+
+  &-comp {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    margin-top: 1.5rem;
+
+    &_header {
+      margin: 0rem;
+
+      @include custom-media-query("mobile", $sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

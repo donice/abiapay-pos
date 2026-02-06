@@ -1,0 +1,94 @@
+@use "../../../../../../styles/index.scss" as *;
+
+.bottom-nav {
+  display: none;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  color: $text-primary;
+  background-color: white;
+  border-right: $border;
+  transition: width 1s ease-in-out;
+
+  @include custom-media-query("mobile", $sm) {
+    padding: px-to-rem(16px);
+    display: flex;
+  }
+
+  &_items_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bottom-nav_items {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.5rem;
+
+      .bottom-nav_item {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: px-to-rem(10px);
+        gap: 10px;
+        font-weight: 500;
+        border-radius: px-to-rem(8px);
+        background-color: none;
+        transition: background-color 0.15s ease-in;
+
+        span {
+          font-size: 2px;
+          display: flex;
+          &:nth-child(1) .icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &:nth-child(2) {
+            font-size: px-to-rem(14px);
+          }
+        }
+      }
+
+      .inactive {
+        &:hover {
+          background-color: #d3d3d339;
+        }
+      }
+
+      .active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          color: $primary-hover;
+          // background-color: #d3d3d339;
+        }
+      }
+
+      .active {
+        color: $primary;
+        background-color: #d3d3d339;
+
+
+        .out {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .plus {
+    font-size: px-to-rem(30px);
+  }
+}

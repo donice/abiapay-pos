@@ -1,0 +1,18 @@
+@use "../../../src/styles/index.scss" as *;
+
+
+.forgot-password {
+  // margin-top: 2rem;
+  &_text {
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-primary;
+    text-align: right;
+    cursor: pointer;
+
+    &:hover {
+      // text-decoration: underline;
+      color: $primary;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@use "../../../../../styles/index.scss" as *;
+
+.main-table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+
+  &_form_tickets_container {
+    .tickets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 1rem;
+
+      @include custom-media-query("mobile", $sm) {
+        grid-template-columns: 1fr; 
+      }
+
+      .ticket {
+        cursor: pointer;
+        border-radius: 0.7rem;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid #86efac;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+        min-width: 250px; 
+
+        div:first-child {
+          flex: 1; 
+          p {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px; 
+
+            &:first-child {
+              font-weight: bold;
+              font-size: 16px;
+              color: green;
+            }
+
+            &:last-child {
+              font-size: 14px;
+              color: $text-primary;
+            }
+          }
+        }
+
+        div:last-child {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          align-items: flex-end;
+          min-width: fit-content;
+          flex-shrink: 0;
+
+          p {
+            &:nth-child(1) {
+              font-weight: bold;
+              font-size: 16px;
+              color: green;
+            }
+
+            &:last-child {
+              font-size: 12px;
+              color: $text-primary;
+              font-weight: 700;
+            }
+          }
+
+          .next_date {
+            font-size: 12px;
+            color: $text-primary;
+            display: flex;
+            gap: 0.25rem;
+
+            span {
+              max-width: 120px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              text-align: end;
+            }
+
+            .icon {
+              color: rgb(200, 144, 0);
+            }
+          }
+        }
+      }
+
+      .completed,
+      .pending {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.8rem;
+        font-size: 12px;
+        min-width: fit-content;
+        white-space: nowrap;
+        font-weight: 600;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        .icon {
+          font-size: 16px;
+        }
+      }
+
+      .completed {
+        color: #059669;
+        background-color: #d1fae5;
+      }
+
+      .pending {
+        color: #ca8a04;
+        background-color: #fef3c7;
+      }
+    }
+  }
+}
+

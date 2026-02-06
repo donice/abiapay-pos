@@ -1,0 +1,102 @@
+@use "../../../styles/index.scss" as *;
+
+.custom-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  figure {
+    border: 1px solid #e4e4e7;
+    overflow: scroll;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+
+    @include custom-media-query("mobile", 425px) {
+      padding: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 40px;
+
+      th,
+      td {
+        border-bottom: 1px solid #e8e5e593;
+        padding: px-to-rem(10px) px-to-rem(14px);
+        font-size: 0.85rem;
+        color: $text-primary;
+        font-weight: 400;
+      }
+
+      th {
+        text-transform: capitalize;
+        text-align: left;
+      }
+
+      td {
+        color: #52525b;
+      }
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 2rem;
+    font-size: 0.75rem;
+
+    .page-item {
+      margin: 0 2.5px;
+
+      &.active .page-link {
+        background-color: $primary;
+        color: white;
+        border: 1px solid $primary;
+      }
+    }
+
+    .page-link {
+      cursor: pointer;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      color: $text-primary;
+      border-radius: 0.55rem;
+    }
+  }
+
+  .filter {
+    position: relative;
+    border: 1px solid #e4e4e7;
+    overflow: scroll;
+    border-radius: 0.75rem;
+    padding:  1rem;
+
+    &_icon {
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      color: #b0b0b7;
+      font-size: 1.55rem;
+    }
+
+    
+    input {
+      border: thin solid #d5d5d5;
+      padding:  0.5rem 0.5rem 0.5rem 2.5rem;
+      border-radius: 5px;
+      width: 100%;
+
+      &::placeholder {
+        color: #8e8e8ea5;
+        font-size: 14px;
+        font-weight: 200;
+      }
+    }
+
+  }
+
+}

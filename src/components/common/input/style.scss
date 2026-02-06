@@ -1,0 +1,200 @@
+@use "../../../styles/index.scss" as *;
+
+$form-label: #595a5b;
+$form-input-border: #d5d5d5;
+$icon-color: #a4a4a4;
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  position: relative;
+  
+  label {
+    display: flex;
+    color: $form-label;
+    font-size: 0.85rem;
+  }
+
+  input {
+    border: thin solid $form-input-border;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 10px;
+    min-width: 20rem;
+    width: 100%;
+    outline: green;
+
+    &::placeholder {
+      color: #8e8e8ea5;
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+  .input_icon {
+    font-size: 1.5rem;
+    position: absolute;
+    // z-index: 1;
+    color: $icon-color;
+    top: 2.1rem;
+    left: 1rem;
+  }
+
+  .input_toggle_icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    color: $icon-color;
+    top: 2.1rem;
+    right: 1rem;
+  }
+}
+$icon-color: #a4a4a4;
+
+// form input
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  // gap: 0.15rem;
+  position: relative;
+
+  input {
+    border: thin solid $form-input-border;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    min-width: 20rem;
+    width: 100%;
+    outline: green;
+
+    &::placeholder {
+      color: #bbbbbba5;
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+
+
+.errorinput {
+  border: thin solid red;
+}
+  .form-input_icon {
+    font-size: 12px;
+    position: absolute;
+    // z-index: 1;
+    color: $icon-color;
+    top: 0.5rem;
+    left: 1rem;
+  }
+
+  .form-input_toggle_icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    color: $icon-color;
+    top: 2.1rem;
+    right: 1rem;
+  }
+}
+
+// select input
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  position: relative;
+
+  label {
+    font-size: 12px;
+    position: absolute;
+    // z-index: 1;
+    color: $icon-color;
+    top: 0.5rem;
+    left: 1rem;
+  }
+  select {
+    /* styling */
+    background-color: white;
+    border: thin solid $form-input-border;
+    border-radius: 10px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    // position: relative;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* arrows */
+
+    &.minimal {
+      background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+      background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+      background-size: 5px 5px, 5px 5px, 1px 1.5em;
+      background-repeat: no-repeat;
+
+      &:focus {
+        background-image: linear-gradient(45deg, #d5d5d5 50%, transparent 50%),
+          linear-gradient(135deg, transparent 50%, #d5d5d5 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+          calc(100% - 2.5em) 0.5em;
+        background-size: 5px 5px, 5px 5px, 1px 1.5em;
+        background-repeat: no-repeat;
+        border-color: gray;
+        outline: 0;
+      }
+    }
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+  }
+}
+
+
+.error {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.selectsearch-container {
+  border: thin solid $form-input-border;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  min-width: 20rem;
+  width: 100%;
+  outline: green;
+  display: grid;
+
+  label {
+    display: flex;
+    color: #a6a6a6;
+    font-size: 0.8rem;
+  }
+  input {
+    border-radius: 10px;
+    min-width: 20rem;
+    width: 100%;
+    outline: green;
+
+    &::placeholder {
+      color: #8e8e8ea5;
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+  
+}

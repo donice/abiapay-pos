@@ -1,0 +1,16 @@
+.loader {
+  width: var(--loader-width, 100%);
+  height: var(--loader-height, 100%);
+  background: linear-gradient(-45deg, #eee 0%, #ddd 50%, #eee 100%);
+  border-radius: 1rem;
+  animation: gradientAnimation 0.1s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

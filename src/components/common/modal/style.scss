@@ -1,0 +1,294 @@
+@use "../../../styles/index.scss" as *;
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  margin: 0 1rem;
+  z-index: 9999;
+
+  .logo_icon {
+    margin-bottom: 2rem;
+    width: 4rem;
+    background-color: #f2fff4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #00800041;
+
+  }
+
+  .success_icon {
+    color: green;
+    font-size: 4.5rem;
+    margin: 2rem 0;
+  }
+
+  .error_icon {
+    background-color: #ffe5e5;
+    color: red;
+    padding: 0.5rem;
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    border-radius: 100%;
+  }
+
+  .warning_icon {
+    background-color: #fcf9d5a8;
+    color: rgb(255, 217, 0);
+    // border: 1px solid rgb(255, 217, 0);
+    padding: 0.5rem;
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    border-radius: 100%;
+  }
+
+
+
+  .error_p {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $text-primary;
+    margin-top: -0.5rem;
+  }
+
+
+  p {
+    // margin-bottom: 20px;
+    font-size: 12px;
+    color: gray;
+
+    span {
+      color: rgb(57, 57, 57);
+      font-weight: 500;
+    }
+  }
+
+  .button {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    padding: clamp(0.55rem, 1.2vw + 7.16px, 0.75rem)
+      clamp(0.75rem, 1.2vw + 7.16px, 1.5rem);
+    border-radius: 0.35rem;
+    transition: all 0.5s ease;
+    font-size: clamp(14px, 1.2vw + 7.16px, 16px);
+    font-weight: 300;
+
+    @include custom-media-query("mobile", 425px) {
+      flex-direction: row;
+    }
+  }
+
+  .top {
+    margin: 0.5rem 0;
+  }
+
+  .primary {
+    cursor: pointer;
+    background-color: $primary;
+    color: white;
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+
+  .modalContent {
+    // margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modalHeader {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: green;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: green;
+    }
+
+    h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+
+  .modalContentEnum {
+    position: relative;
+    width: 100%;
+    min-width: 350px;
+    height: 250px;
+    background: url(../../../../public/abia-logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.09;
+  }
+  .modalContentEnumContent {
+    position: absolute;
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .assetCode {
+      font-size: 1.2rem;
+      margin-bottom: -0.35rem;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 150px;
+    }
+
+    .custom_vehicle_details {
+      max-width: 15rem;
+      p {
+        position: absolute;
+      }
+      .vehicle_type {
+        right: -6rem;
+        top: 6rem;
+        transform: rotate(90deg);
+        font-weight: 600;
+        color: red;
+        text-transform: uppercase;
+      }
+      .vehicle_cat {
+        left: -7.75rem;
+        top: 6rem;
+        transform: rotate(-90deg);
+        font-weight: 600;
+        color: red;
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abssin_no {
+    letter-spacing: 0.35rem;
+  }
+
+  .plate_number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -0.75rem;
+  }
+
+  .plate_number_title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .qr_container {
+    width: 175px;
+  }
+}
+
+.success_icon {
+  background-color: #e6ffe6;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.vehicle_items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  text-align: left;
+  margin: 1rem 0;
+  p {
+    margin: 0;
+
+    span {
+      font-weight: 500;
+      margin-left: 0.5rem;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+#enumeration_modal {
+  gap: 0.75rem;
+
+  .btn-container {
+    gap: 1rem;
+  }
+}
+
+.account-details {
+  border: 1px solid #d1d1d1;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+
+  &_items {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 1rem;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    p:last-child {
+      font-weight: 700;
+      color: #4a4a4a;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.modalActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

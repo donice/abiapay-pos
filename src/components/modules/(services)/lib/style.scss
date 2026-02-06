@@ -1,0 +1,88 @@
+.networks-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.networks-container {
+  .networks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  .network-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+      background-color: #ffcb05;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px #00800058;
+    }
+
+    &.selected {
+      border: 1px solid green;
+    }
+  }
+
+  .network-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .network-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .network-name {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+}
+
+.airtime-amounts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  .airtime-amounts {
+    background-color: #9cffa232;
+    border: 1px solid #7cff96;
+
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    p {
+       color: #00851b;
+    font-weight: 700;
+
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 1px 8px #39393939;
+    }
+
+    &:active {
+      transform: translateY(0);
+      background-color: #f5f5f5;
+    }
+  }
+}

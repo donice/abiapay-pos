@@ -1,0 +1,52 @@
+.SearchableDropdown {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 8px;
+  // font-family: Arial, sans-serif;
+  position: relative;
+  // width: 100%;
+
+  // &-label {
+  //   font-weight: bold;
+  // }
+
+  // &-container {
+  //   position: relative;
+  //   width: 100%;
+  // }
+
+  // &-input {
+  //   width: 100%;
+  //   padding: 10px;
+  //   border: 1px solid #ccc;
+  //   border-radius: 4px;
+  //   cursor: pointer;
+  // }
+
+  &-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  &-option {
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &.disabled {
+      color: gray;
+      cursor: not-allowed;
+    }
+  }
+}

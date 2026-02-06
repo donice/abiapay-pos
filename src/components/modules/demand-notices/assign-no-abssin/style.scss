@@ -1,0 +1,122 @@
+
+@use "../../../../styles/index.scss" as *;
+.main-table {
+  width: 100%;
+  overflow-x: auto; 
+  display: block; 
+  margin-top: 10px;
+
+  &_form_tickets_container {
+    .tickets {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+
+      @include custom-media-query("mobile", $sm) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+
+      .ticket {
+        cursor: pointer;
+        border-radius: 0.7rem;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid #86efac;
+        background-color: #ffffff;
+        box-shadow: 11px 10px 14px 0px rgba(208, 208, 208, 0.28);
+        flex-wrap: wrap; 
+
+        div:first-child {
+          p {
+            font-size: 14px;
+            &:first-child {
+              font-weight: bold;
+              font-size: 16px;
+              color: green;
+            }
+
+            &:last-child {
+              font-size: 14px;
+              color: $text-primary;
+            }
+          }
+        }
+
+        div:last-child {
+        //   display: flex;
+          // flex-direction: column;
+          gap: 0.25rem;
+          align-items: flex-end;
+          min-width: fit-content; 
+
+          p {
+            &:nth-child(1) {
+              font-weight: bold;
+              font-size: 16px;
+              color: green;
+            }
+
+            &:last-child {
+              font-size: 12px;
+              color: $text-primary;
+              font-weight: 700;
+            }
+          }
+
+          .next_date {
+            font-size: 12px;
+            color: $text-primary;
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 0.25rem;
+
+            span {
+              max-width: 100px;
+              text-align: end;
+            }
+
+            .icon {
+              color: rgb(200, 144, 0);
+            }
+          }
+        }
+      }
+
+     
+      .completed,
+      .pending {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        padding: 0.1rem 0.7rem;
+        gap: 0.25rem;
+        font-size: 12px;
+        min-width: fit-content; 
+        white-space: nowrap;
+
+        &:hover {
+          background-color: rgba(110, 231, 183, 0.528);
+        }
+
+        .icon {
+          font-size: 16px;
+        }
+      }
+
+      .completed {
+        color: rgb(5 150 105);
+        background-color: rgba(110, 231, 183, 0.316);
+      }
+
+      .pending {
+        color: rgb(202 138 4);
+        background-color: #fde04751;
+      }
+    }
+  }
+}

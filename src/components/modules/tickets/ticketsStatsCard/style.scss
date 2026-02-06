@@ -1,0 +1,62 @@
+@use "../../../../styles/index.scss" as *;
+
+.tickets-wallet {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+
+  @include custom-media-query("mobile", $sm) {
+    display: block;
+    margin-top: 0rem;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &-card {
+    display: inline-block;
+    background-image: url("../../../assets/cards_bg.jpg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    $bold-primary-text: #3f3f46;
+    padding: 1.5rem 1rem;
+    border-radius: 0.7rem;
+    background-color: $primary-hover;
+    color: #d4d4d8;
+    font-size: 12px;
+    margin-right: 0.5rem;
+    width: 100%;
+
+    @include custom-media-query("mobile", $sm) {
+      max-width: 21rem;
+    }
+
+    .ticket_container {
+      width: 100%;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_balance {
+      display: grid;
+
+      &:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      span:nth-child(2) {
+        color: white;
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

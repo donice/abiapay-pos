@@ -1,0 +1,44 @@
+@use "../../../styles/index.scss" as *;
+
+.custom-header {
+  margin-bottom: 0;
+
+  @include custom-media-query("mobile", $sm) {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(min(0.75rem), 300px, max(1.2rem));
+    font-weight: 700;
+    color: #363636;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: -0.25rem 0;
+    color: $text-primary;
+  }
+}
+
+.custom-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include custom-media-query("mobile", $sm) {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: clamp(min(0.75rem), 300px, max(1.2rem));
+    font-weight: 700;
+    color: #363636;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: -0.25rem 0;
+    color: $text-primary;
+  }
+}

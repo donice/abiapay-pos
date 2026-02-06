@@ -1,0 +1,144 @@
+@use "../../../../src/styles/index.scss" as *;
+
+.bill-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: $primary;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &_comp {
+    display: grid;
+    border: 2px solid $gray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 0;
+      border-bottom: 2px solid $gray;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      p {
+        font-size: 15px;
+        color: $text-primary;
+        word-wrap: break-word; 
+        max-width: 100%;
+
+        &:last-child {
+          font-weight: 500;
+          max-width: 15rem;
+          text-align: right;
+          overflow-wrap: break-word; 
+        }
+      }
+    }
+  }
+
+  &_btn {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #f0fdf4;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    color: green;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    .icon {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      background-color: #d9f2e4;
+    }
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &_btn {
+      display: grid;
+      gap: 1rem;
+    }
+  }
+}
+
+// Responsive Adjustments
+@media (max-width: 768px) {
+  .bill-details {
+    padding: 0.5rem;
+    
+    &_comp {
+      padding: 0.75rem;
+
+      div {
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          text-align: left !important;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &_btn {
+      font-size: 13px;
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .bill-details {
+    gap: 1rem;
+
+    &_comp {
+      padding: 0.5rem;
+
+      div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+
+        p {
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+    }
+
+    &_btn {
+      font-size: 12px;
+      padding: 0.4rem;
+    }
+  }
+}

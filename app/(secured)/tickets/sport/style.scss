@@ -1,0 +1,55 @@
+@use "../../../../src/styles/index.scss" as *;
+
+.sports-ticket {
+  .sports-ticket_container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;  
+    margin-top: 2rem;
+  }
+  
+  &_items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+ 
+
+    @include custom-media-query("mobile", $sm) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .sports-ticket_item {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem;
+      border: 2px solid #4ade8091;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background-color: #f0fdf4;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+
+      .icon {
+        font-size: 2rem;
+        color: green;
+      }
+
+      div {
+        display: flex;
+        gap: 1rem;
+
+        div {
+          display: block;
+          h2 {
+            font-weight: 500;
+          }
+
+          p {
+            color: $text-primary;
+            font-size: 14px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+  }
+}

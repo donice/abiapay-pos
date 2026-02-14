@@ -2,7 +2,7 @@
 import { CustomHeader } from "@/src/components/common/header";
 import axiosInstance from "@/src/lib/axiosInstance";
 import { formatDate } from "@/src/utils/formatDate";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import React from "react";
 import { RiFileListLine } from "react-icons/ri";
 

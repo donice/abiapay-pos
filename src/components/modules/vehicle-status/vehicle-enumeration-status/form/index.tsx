@@ -5,7 +5,7 @@ import { Button } from "@/src/components/common/button";
 import { SubmitHandler, useForm } from "react-hook-form";
 import "./style.scss";
 import { TbSearch } from "react-icons/tb";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import {
   verifyVehicleEnumeration,
   verifyVehicleEnumrationPayload,

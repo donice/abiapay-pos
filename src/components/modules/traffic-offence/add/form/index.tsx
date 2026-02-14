@@ -11,7 +11,7 @@ import { BackButton, Button } from "@/src/components/common/button";
 import toast from "react-hot-toast";
 import { CreateOffencePayload } from "@/src/services/trafficOffences";
 import { getCurrentDateTime } from "@/src/utils/getCurrentDateTime";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { fetchPlateNumberInfo } from "@/src/services/ticketsServices";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { fetchAllOffences } from "@/src/services/trafficOffences";

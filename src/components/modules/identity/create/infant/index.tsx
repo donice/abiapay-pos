@@ -15,7 +15,7 @@ import {
   fetchLocationStateLGA,
   fetchSchool,
 } from "@/src/services/common";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 import { isBrowser } from "@/src/utils/isBrowser";
 import {
   createInfantABSSIN,

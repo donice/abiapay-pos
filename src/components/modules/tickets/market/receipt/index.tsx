@@ -2,7 +2,7 @@
 import Empty from "@/src/components/common/empty";
 import Loader from "@/src/components/common/loader";
 import { fetchMarketEnumerationDetails } from "@/src/services/ticketsServices";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import React from "react";
 
 const ViewReceiptComponent = ({ id }: { id: string }) => {

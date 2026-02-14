@@ -6,7 +6,7 @@ import "./style.scss";
 import { formatAmount } from "@/src/utils/formatAmount";
 import { InformationModal, SuccessModal } from "@/src/components/common/modal";
 import { fetchTransferHistory } from "@/src/services/transactions";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { Loading } from "@/src/components/common/loader/redirecting";
 import { useRouter } from "next/navigation";
 import Empty from "@/src/components/common/empty";

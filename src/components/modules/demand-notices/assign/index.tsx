@@ -10,7 +10,7 @@ import {
   fetchDemandNotice,
   searchCompany,
 } from "@/src/services/demandNotice";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 import React from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";

@@ -5,7 +5,7 @@ import React from "react";
 import { BackButton, Button } from "@/src/components/common/button";
 import "./style.scss";
 import { formatAmount } from "@/src/utils/formatAmount";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 
 import toast from "react-hot-toast";
 import {

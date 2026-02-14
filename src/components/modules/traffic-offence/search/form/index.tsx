@@ -3,7 +3,7 @@ import React from "react";
 import { TbSearch } from "react-icons/tb";
 import { SearchOffencePayload } from "@/src/services/trafficOffences";
 import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { searchOffence } from "@/src/services/trafficOffences";
 import toast from "react-hot-toast";
 import { Button } from "@/src/components/common/button";

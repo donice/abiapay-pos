@@ -18,7 +18,7 @@ import {
   createNewTicket,
   fetchPlateNumberInfo,
 } from "@/src/services/ticketsServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { bankOptions } from "@/src/lib/app";
 
 const AddTransportTicketForm = ({

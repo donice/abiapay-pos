@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { fetchPlateNumberInfo } from "@/src/services/ticketsServices";
 import toast from "react-hot-toast";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { getErrorMessages } from "@/src/utils/helper";
 import {
   EmblemProduct,

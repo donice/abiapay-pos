@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { Loading } from "@/src/components/common/loader/redirecting";
 import "./style.scss";
 import Empty from "@/src/components/common/empty";

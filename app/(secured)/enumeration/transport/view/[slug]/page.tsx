@@ -3,7 +3,7 @@ import { SecondaryButton, PrimaryButton, GoBackButton } from "@/src/components/c
 import { AbiaEnumerationLarge } from "@/src/components/common/Images";
 import QRCode from "react-qr-code";
 import { fetchCompletedTransportEnumeration } from "@/src/services/transportEnumerationService";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import Loading from "@/app/(secured)/loading";
 import { useEffect, useState } from "react";
 import "./style.scss";

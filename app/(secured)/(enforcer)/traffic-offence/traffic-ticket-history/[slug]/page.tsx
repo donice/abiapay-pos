@@ -4,7 +4,7 @@ import { getLastPathSegment } from "@/src/utils/getLastPathSegment";
 import React, { useMemo, useState, useEffect } from "react";
 import "./style.scss";
 import { formatAmount } from "@/src/utils/formatAmount";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import toast from "react-hot-toast";
 import { Loading } from "@/src/components/common/loader/redirecting";
 import { fetchOffenceHistory } from "@/src/services/trafficOffences";

@@ -6,7 +6,7 @@ import { fetchLGAData } from "@/src/services/common";
 import "./style.scss";
 import { useForm } from "react-hook-form";
 import { fetchMarketEnumerationDetails } from "@/src/services/ticketsServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import CreateMarketLevyForm from "./createMarketLevy";

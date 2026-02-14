@@ -9,7 +9,7 @@ import {
   fetchABSSINInfoWIthPhone,
   fetchLGAData,
 } from "@/src/services/common";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 import { isBrowser } from "@/src/utils/isBrowser";
 import CustomDialog from "@/src/components/common/modal/CustomDialog";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./style.scss";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import LoaderSkeleton from "@/src/components/common/loader-skeleton";
 import { fetchABSSINStats } from "@/src/services/identityService";
 

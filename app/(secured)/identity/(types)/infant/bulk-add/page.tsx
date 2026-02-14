@@ -1,7 +1,7 @@
 "use client";
 import { Button, CancelButton } from "@/src/components/common/button";
 import { CustomHeader } from "@/src/components/common/header";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { useState } from "react";
 import {
   TbCloudUpload,

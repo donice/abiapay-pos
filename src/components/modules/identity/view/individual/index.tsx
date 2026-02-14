@@ -2,7 +2,7 @@
 
 import React from "react";
 import IndividualABSSINStatsCard from "./IndividualABSSINStatsCard";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { getIndividualABSSINs } from "@/src/services/identityService";
 import ViewAllIndividualABSSIN from "./ViewAllIndividualABSSIN";
 import LargeLoader from "@/src/components/common/loader";

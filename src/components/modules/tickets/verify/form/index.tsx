@@ -6,7 +6,7 @@ import {
   verifyTicket,
   VerifyTicketPayload,
 } from "@/src/services/verifyTickets";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 

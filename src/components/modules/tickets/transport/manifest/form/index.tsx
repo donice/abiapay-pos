@@ -17,7 +17,7 @@ import {
   createManifest,
   fetchPlateNumberInfo,
 } from "@/src/services/ticketsServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { RiAddLine, RiDeleteBin2Line } from "react-icons/ri";
 import { bankOptions } from "@/src/lib/app";
 

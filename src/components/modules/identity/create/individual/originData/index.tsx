@@ -8,7 +8,7 @@ import {
   createIndividualAbssin,
   createIndividualAbssinPayloadType,
 } from "@/src/services/identityService";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import toast from "react-hot-toast";
 import { AbssinSuccessModal, SuccessModal } from "@/src/components/common/modal";
 

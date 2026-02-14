@@ -3,7 +3,7 @@ import { CustomFormHeader } from "@/src/components/common/header";
 import LargeLoader from "@/src/components/common/loader";
 import { getIndividualABSSINs } from "@/src/services/identityService";
 import { transformStringWithUnderscores } from "@/src/utils/transformStringWithUnderscores";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import React, { useEffect, useState } from "react";
 import { TbUser } from "react-icons/tb";
 import "./style.scss";

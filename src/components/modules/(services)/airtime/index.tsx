@@ -1,7 +1,7 @@
 "use client";
 import { CustomHeader } from "@/src/components/common/header";
 import { fetchDashboardData } from "@/src/services/dashboardService";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 import React from "react";
 import TransferWalletCards from "../../wallet/components/wallet-cards";
 import Networks, { AirtimeAmounts } from "../lib/Networks";

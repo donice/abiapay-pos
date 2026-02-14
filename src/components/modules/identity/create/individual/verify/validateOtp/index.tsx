@@ -3,7 +3,7 @@ import { FormTextInput } from "@/src/components/common/input";
 import { BackButton, Button } from "@/src/components/common/button";
 import { CustomHeader } from "@/src/components/common/header";
 import "../../style.scss";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { validateIDOtp, validateNoIDOtp } from "@/src/services/identityService";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";

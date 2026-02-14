@@ -11,7 +11,7 @@ import {
 import UserData from "./userData";
 import OriginData from "./originData";
 import { useSearchParams } from "next/navigation";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { isBrowser } from "@/src/utils/isBrowser";
 
 const CreateIndividualAbssinComponent = () => {

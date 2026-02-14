@@ -12,7 +12,7 @@ import { FormTextInput, SelectInput } from "@/src/components/common/input";
 import { SuccessModal } from "@/src/components/common/modal";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import "./style.scss";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { ABSAAPayload } from "@/src/components/types/absaaTypes";
 import { createFirstPartySignage } from "@/src/services/absaaService";
 import { bankOptions } from "@/src/lib/app";

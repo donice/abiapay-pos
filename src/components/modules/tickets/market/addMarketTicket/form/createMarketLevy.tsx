@@ -9,7 +9,7 @@ import {
   MarketLevyType,
   postPayForMarketLevy,
 } from "@/src/services/ticketsServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { getErrorMessages } from "@/src/utils/helper";
 import toast from "react-hot-toast";
 import { useDebounce } from "@/src/hooks/useDebounce";

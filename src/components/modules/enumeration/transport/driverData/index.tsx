@@ -11,7 +11,7 @@ import {
   CreateTicketType,
   createTransportEnumeration,
 } from "@/src/services/transportEnumerationService";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import toast from "react-hot-toast";
 import { EnumerationSuccessModal } from "@/src/components/common/modal";
 import { fetchLGAData } from "@/src/services/common";

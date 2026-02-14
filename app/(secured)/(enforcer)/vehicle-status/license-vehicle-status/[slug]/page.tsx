@@ -10,7 +10,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { CreateTicketPayload } from "@/src/components/types/ticketTypes";
 import { getCurrentDateTime } from "@/src/utils/getCurrentDateTime";
 import { randomInvoiceGenerator } from "@/src/utils/randomInvoiceGenerator";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { createNewTicket } from "@/src/services/ticketsServices";
 import toast from "react-hot-toast";
 import { getErrorMessages } from "@/src/utils/helper";

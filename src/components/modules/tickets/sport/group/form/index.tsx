@@ -6,7 +6,7 @@ import "../style.scss";
 import { useForm } from "react-hook-form";
 import { createGroupSportTicket } from "@/src/services/ticketsServices";
 import toast from "react-hot-toast";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { getErrorMessages } from "@/src/utils/helper";
 import { CreateGroupSportPayload } from "@/src/components/types/ticketTypes";
 

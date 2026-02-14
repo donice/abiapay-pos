@@ -17,7 +17,7 @@ import {
   WalletInfoType,
 } from "@/src/services/walletService";
 import toast from "react-hot-toast";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "react-query";
 import { SmallLoader } from "@/src/components/common/loader";
 import { fetchDashboardData } from "@/src/services/dashboardService";
 import { InformationModal } from "@/src/components/common/modal";

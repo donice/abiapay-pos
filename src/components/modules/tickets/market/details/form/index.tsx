@@ -10,7 +10,7 @@ import {
   MarketLevyType,
   postPayForMarketLevy,
 } from "@/src/services/ticketsServices";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import { formatAmount } from "@/src/utils/formatAmount";
 import { PiSealCheckDuotone } from "react-icons/pi";
 import { BiLoaderCircle } from "react-icons/bi";

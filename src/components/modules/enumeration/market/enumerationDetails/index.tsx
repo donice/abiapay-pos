@@ -8,7 +8,7 @@ import {
   fetchMarkets,
 } from "@/src/services/marketEnumerationService";
 import { fetchABSSINInfo, fetchLGAData } from "@/src/services/common";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import toast from "react-hot-toast";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { getCurrentYear } from "@/src/utils/getCurrentYear";

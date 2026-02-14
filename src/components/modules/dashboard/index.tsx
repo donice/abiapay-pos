@@ -24,7 +24,7 @@ import { WalletCard } from "./walletCard";
 import { fetchTransactions } from "@/src/services/ticketsServices";
 import QuickLink from "./quickLink";
 import MdaCard from "./mdaCard";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { fetchReceipts } from "@/src/services/receiptsServices";
 import { fetchBills } from "@/src/services/billServices";
 import EnforcerCard from "./enforcerCard";

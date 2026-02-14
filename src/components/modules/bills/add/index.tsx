@@ -4,7 +4,7 @@ import { FormTextInput, SelectInput } from "@/src/components/common/input";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { fetchBillProducts } from "@/src/services/billServices";
 import { fetchABSSINInfo, fetchTaxOffice } from "@/src/services/common";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";

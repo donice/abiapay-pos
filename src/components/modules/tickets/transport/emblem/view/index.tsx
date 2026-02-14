@@ -9,7 +9,7 @@ import jtb from "@/public/logos/emblem/jtb.png";
 import { isBrowser } from "@/src/utils/isBrowser";
 import { Button } from "@/src/components/common/button";
 import html2canvas from "html2canvas"
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import axiosInstance from "@/src/lib/axiosInstance";
 
 const ViewTransportEmblemReceipt = ({

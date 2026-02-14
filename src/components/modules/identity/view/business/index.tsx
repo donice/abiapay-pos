@@ -1,6 +1,6 @@
 import { LargeLoader } from '@/src/components/common/loader';
 import { getBusinessABSSINs } from '@/src/services/identityService';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery } from 'react-query';
 import React from 'react'
 import BusinessAbssinStatsCard from './BusinessAbssinStatsCard';
 import ViewAllBusinessABSSIN from './ViewAllBusinessABSSIN';

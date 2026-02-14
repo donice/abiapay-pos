@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/src/components/common/button";
 import "./style.scss";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { CustomHeader } from "@/src/components/common/header";
 import { fetchAccountStatement } from "@/src/services/accountServices";
 import { fetchDashboardData } from "@/src/services/dashboardService";

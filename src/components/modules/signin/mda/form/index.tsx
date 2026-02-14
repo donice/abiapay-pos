@@ -6,7 +6,7 @@ import "./style.scss";
 import toast from "react-hot-toast";
 import { loginMDA, useAuthDispatch } from "@/src/context/authContext";
 import { useRouter } from "next/navigation";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 
 interface FormData {
   email: string;

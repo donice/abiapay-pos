@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/src/components/common/button";
 import { FormTextInput, SelectInput } from "@/src/components/common/input";
 import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation } from "react-query";
 import {
   saveVehicleDetails,
   SaveVehicleDetailsProps,

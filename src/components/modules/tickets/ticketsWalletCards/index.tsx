@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { fetchCollectionData, fetchDashboardData } from "@/src/services/dashboardService";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { TicketsWalletCard } from "../../dashboard/walletCard";
 import { State } from "@/src/components/types/dashboardTypes";
 import "./style.scss";

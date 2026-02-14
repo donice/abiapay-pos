@@ -13,7 +13,7 @@ import { formatAmount } from "@/src/utils/formatAmount";
 import { AbiaStateLogo } from "@/src/components/common/Images";
 import { useReactToPrint } from "react-to-print";
 import { useSearchParams } from "next/navigation";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { fetchSingleEmblem } from "@/src/services/ticketsServices";
 import Empty from "@/src/components/common/empty";
 

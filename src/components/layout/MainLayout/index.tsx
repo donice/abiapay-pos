@@ -1,12 +1,17 @@
 "use client";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { AuthProvider } from "@/src/context/authContext";
 import { protectedRoutes, unprotectedRoutes } from "@/src/routes";
 import SecuredPagesLayout from "@/src/components/layout/SecuredPagesLayout";
 import UnsecuredPagesLayout from "@/src/components/layout/UnsecuredPagesLayout";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { Toaster } from "react-hot-toast";
+
+const queryClient = new QueryClient();
 
 export interface RouteConfig {
   path: string;
@@ -22,10 +27,9 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
   const isProtectedRoute = protectedRoutes.includes(pathname);
   const isPartOfProtectedRoute = protectedRoutes.some((route) =>
-    pathname.startsWith(route)
+    pathname.startsWith(route),
   );
   const isUnprotectedRoute = unprotectedRoutes.includes(pathname);
-  const [queryClient] = useState(() => new QueryClient());
 
   console.log("pathname", pathname);
   return (

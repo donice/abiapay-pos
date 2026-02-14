@@ -7,7 +7,7 @@ import { GoVerified } from "react-icons/go";
 import { GoBackButton } from "../../common/button";
 import Empty from "../../common/empty";
 import "./style.scss";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "react-query";
 import { fetchTransferHistory } from "@/src/services/transactions";
 import { Loading } from "../../common/loader/redirecting";
 import toast from "react-hot-toast";
